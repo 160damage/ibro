@@ -1,0 +1,31 @@
+@import "normalize.css";
+/*Add grid*/
+@import "grid12.css";
+
+/*Add variables*/
+@import "var.css";
+
+/*main page settings*/
+@import "page.css";
+
+/*blocks*/
+@import "blocks/header/header.css";
+@import "blocks/callback/callback.css";
+@import "blocks/contacts/contacts.css";
+@import "blocks/logo/logo.css";
+@import "blocks/search/search.css";
+@import "blocks/navigation/navigation.css";
+@import "blocks/slider/slider.css";
+@import "blocks/last-items/last-items.css";
+@import "blocks/footer/footer.css";
+@import "blocks/widget/widget.css";
+@import "blocks/footer-menu/footer-menu.css";
+@import "blocks/logo-container/logo-container.css";
+@import "blocks/mini-nav/mini-nav.css";
+@import "blocks/cart/cart.css";
+@import "blocks/image-items/image-items.css";
+@import "blocks/reviews/reviews.css";
+@import "blocks/columns-info/columns-info.css";
+
+/*bxslider*/
+@import "jquery.bxslider.css";

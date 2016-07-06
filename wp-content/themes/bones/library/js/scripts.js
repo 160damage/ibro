@@ -118,3 +118,12 @@ jQuery(document).ready(function($) {
 
 
 }); /* end of as page load scripts */
+
+$(document).ready(function(){
+  $('.slider').bxSlider(
+  {
+    controls:true,
+    auto: true,
+    pause: 15000
+    });
+});
