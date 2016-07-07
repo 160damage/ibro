@@ -20,7 +20,7 @@
 	padding: 0;
 	*zoom: 1;
   text-align: center;
-     background: $lightColor; 
+     background: $lightColor;
       height: 83vh;
 }
 
@@ -32,7 +32,7 @@
 ===================================*/
 
 .bx-wrapper .bx-viewport {
-	
+
 	/*fix other elements on the page moving (on Chrome)*/
 	-webkit-transform: translatez(0);
 	-moz-transform: translatez(0);
@@ -52,7 +52,7 @@
 
 .bx-wrapper .bx-loading {
 	min-height: 50px;
-	background: url(images/bx_loader.gif) center center no-repeat #fff;
+	background: url(../images/bx_loader.gif) center center no-repeat #fff;
 	height: 100%;
 	width: 100%;
 	position: absolute;
@@ -104,12 +104,12 @@
 
 .bx-wrapper .bx-prev {
 	left: 2rem;
-	background: url(images/left.png) no-repeat;
+	background: url(../images/left.png) no-repeat;
 }
 
 .bx-wrapper .bx-next {
 	right: 2rem;
-	background: url(images/right.png) no-repeat;
+	background: url(../images/right.png) no-repeat;
 }
 
 
@@ -140,7 +140,7 @@
 	width: 10px;
 	height: 11px;
 	outline: 0;
-	background: url(images/controls.png) -86px -11px no-repeat;
+	background: url(../images/controls.png) -86px -11px no-repeat;
 	margin: 0 3px;
 }
 
@@ -155,7 +155,7 @@
 	width: 9px;
 	height: 11px;
 	outline: 0;
-	background: url(images/controls.png) -86px -44px no-repeat;
+	background: url(../images/controls.png) -86px -44px no-repeat;
 	margin: 0 3px;
 }
 

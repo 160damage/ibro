@@ -1,12 +1,11 @@
 <?php if (!defined('FW')) die( 'Forbidden' );
-if ( empty( $atts['image'] ) ) {
-	$image = fw_get_framework_directory_uri('/static/img/no-image.png');
-} else {
-	$image = $atts['image']['url'];
-}?>
+$bg_image = '';
+if ( ! empty( $atts['background_image'] ) && ! empty( $atts['background_image']['data']['icon'] ) ) {
+	$bg_image = 'background-image:url(' . $atts['background_image']['data']['icon'] . ');';
+}
+?>
 
-<?php $color_class = !empty($atts['color']) ? "fw-btn-{$atts['color']}" : ''; ?>
-<a href="<?php echo esc_attr($atts['link']) ?>" target="<?php echo esc_attr($atts['target']) ?>" class="fw-btn fw-btn-1 <?php echo esc_attr($color_class); ?>">
-	<span><?php echo $atts['label']; ?></span>
-	<img src="<?php echo esc_attr($image) ?>" alt="" />
-</a>
+<div class="image-items__wrap image-items__item1" style="<?php echo $bg_image ?>">
+         <h3 class="image-items__title"><?php echo $atts['label']; ?></h3>
+         <a href="<?php echo esc_attr($atts['link']) ?>" class="image-items__button"  target="<?php echo esc_attr($atts['target']) ?>"><?php echo $atts['button']; ?></a>
+</div>

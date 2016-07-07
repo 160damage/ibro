@@ -15,7 +15,7 @@ $lightColor: #f2f2f2;
 }
 
 .hero{
-  background: url(img/hero.jpg) no-repeat;
+  background: url(../images/hero.jpg) no-repeat;
   height: 83vh;
   background-size: cover;
 }

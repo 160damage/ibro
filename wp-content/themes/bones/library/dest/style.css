@@ -1268,7 +1268,7 @@ span.amp {
         justify-content: flex-end
 }
 .hero {
-    background: url(img/hero.jpg) no-repeat;
+    background: url(../images/hero.jpg) no-repeat;
     height: 83vh;
     background-size: cover
 }
@@ -1635,7 +1635,6 @@ option {
     display: inline-block;
     margin-top: 28px;
     position: relative;
-    display: block;
     width: 22px;
     height: 22px;
     background: url() 0 0 no-repeat;
@@ -1643,7 +1642,8 @@ option {
     background: url(../images/icons/shopping-purse-icon.svg);
     background-size: auto 100%;
     vertical-align: middle;
-    fill: #f2f2f2
+    background-repeat: no-repeat;
+    padding-right: 20px
 }
 .cart__counter {
     position: absolute;
@@ -1838,7 +1838,7 @@ option {
 /* LOADER */
 .bx-wrapper .bx-loading {
     min-height: 50px;
-    background: url(images/bx_loader.gif) center center no-repeat #fff;
+    background: url(../images/bx_loader.gif) center center no-repeat #fff;
     height: 100%;
     width: 100%;
     position: absolute;
@@ -1883,11 +1883,11 @@ option {
 /* DIRECTION CONTROLS (NEXT / PREV) */
 .bx-wrapper .bx-prev {
     left: 2rem;
-    background: url(images/left.png) no-repeat
+    background: url(../images/left.png) no-repeat
 }
 .bx-wrapper .bx-next {
     right: 2rem;
-    background: url(images/right.png) no-repeat
+    background: url(../images/right.png) no-repeat
 }
 .bx-wrapper .bx-controls-direction a {
     position: absolute;
@@ -1912,7 +1912,7 @@ option {
     width: 10px;
     height: 11px;
     outline: 0;
-    background: url(images/controls.png) -86px -11px no-repeat;
+    background: url(../images/controls.png) -86px -11px no-repeat;
     margin: 0 3px
 }
 .bx-wrapper .bx-controls-auto .bx-start:hover, .bx-wrapper .bx-controls-auto .bx-start.active {
@@ -1924,7 +1924,7 @@ option {
     width: 9px;
     height: 11px;
     outline: 0;
-    background: url(images/controls.png) -86px -44px no-repeat;
+    background: url(../images/controls.png) -86px -44px no-repeat;
     margin: 0 3px
 }
 .bx-wrapper .bx-controls-auto .bx-stop:hover, .bx-wrapper .bx-controls-auto .bx-stop.active {
