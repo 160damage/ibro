@@ -129,19 +129,8 @@
  						)); ?>
 
  					</nav>
-
-					 <nav class='navigation'>
-		<ul class="navigation__ul">
-			<li class="navigation__li"><a class="navigation__link" href="#">Mac</a></li>
-			<li class="navigation__li"><a href="#" class="navigation__link">iPhone</a></li>
-			<li class="navigation__li"><a class="navigation__link" href="#">iPad</a></li>
-			<li class="navigation__li"><a class="navigation__link" href="#">iPod</a></li>
-			<li class="navigation__li"><a class="navigation__link" href="#">Watch</a></li>
-			<li class="navigation__li"><a href="#" class="navigation__link">Аксессуары</a></li>
-		</ul>
-	</nav>
-	<a href="#" class="search__trigger"></a>
-	 <a class="cart" href="#"><div class="cart__counter">0</div></a>
+					<a href="#" class="search__trigger"></a>
+		 			<a class="cart" href="#"><div class="cart__counter">0</div></a>
 				 </div>
 		</div>
 	</div>

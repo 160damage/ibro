@@ -1429,23 +1429,23 @@ option {
     margin-top: 24px;
     margin-right: 80px
 }
-.navigation__li {
-    list-style: none
-}
 .navigation__ul {
     padding: 0;
     margin: 0;
     display: -ms-flexbox;
     display: flex
 }
-.navigation__link {
+.navigation li {
+    list-style: none
+}
+.navigation li a {
     display: block;
     color: #fff;
     font-size: 1.125rem;
     padding: 0 10px;
     text-decoration: none
 }
-.navigation__link:hover, .navigation__link:focus {
+.navigation li a:hover, .navigation li a:focus {
     color: #0088cc
 }
 .slider {
@@ -1632,20 +1632,26 @@ option {
     color: #0088cc
 }
 .cart {
+    display: inline-block;
     margin-top: 28px;
     position: relative;
     display: block;
-    width: 19px;
-    height: 21px;
-    background: url(img/shopping-cart.png)
+    width: 22px;
+    height: 22px;
+    background: url() 0 0 no-repeat;
+    background: url(../images/icons/shopping-purse-icon.png);
+    background: url(../images/icons/shopping-purse-icon.svg);
+    background-size: auto 100%;
+    vertical-align: middle;
+    fill: #f2f2f2
 }
 .cart__counter {
     position: absolute;
     border-radius: 50%;
     background-color: #0088cc;
-    top: -4px;
+    top: 13px;
     font-size: 14px;
-    right: -10px;
+    right: -7px;
     line-height: 16px;
     font-weight: 400;
     color: #fff;

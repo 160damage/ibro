@@ -5,21 +5,24 @@
   margin-right: 80px
 }
 
-.navigation__li{
-  list-style: none;
-}
 .navigation__ul{
   padding: 0;
   margin: 0;
   display: flex;
 }
-.navigation__link{
+
+.navigation li{
+  list-style: none;
+}
+
+.navigation li a{
   display: block;
   color:#fff;
   font-size: $secondSize;
   padding: 0 10px;
   text-decoration: none;
 }
-.navigation__link:hover,.navigation__link:focus{
+
+.navigation li a:hover,.navigation li a:focus{
   color:$accentColor;
 }
