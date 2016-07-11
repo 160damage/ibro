@@ -48,7 +48,7 @@
 	<div class="row">
 		<div class="col-md-1 text_center">
 		<div class="logo-container">
-			<a href="#" class="logo">
+			<a href="<?php echo esc_url( home_url( '/' ) ) ?>" class="logo">
 				<img class="logo__img" src="wp-content\themes\bones\library\css\img\logo2.png" alt="ibro-store">
 			</a>
 			<!--<h1 class="header__h1">
@@ -96,8 +96,19 @@
  						)); ?>
 
  					</nav>
-					<a href="#" class="search__trigger"></a>
-		 			<a class="cart" href="#"><div class="cart__counter">0</div></a>
+						<?php if( function_exists( 'WC' ) ) { ?>
+
+					<div class="search__wrap">
+						<a href="#" class="search__trigger" title="<?php _e( 'Поиск по товарам','bones' ); ?>">
+						</a>
+						<form class="search__triggered" role="search" method="get" class="woocommerce-product-search" action="<?php echo esc_url( home_url( '/'  ) ); ?>">
+							<input class="search__field" type="search"  placeholder="<?php echo esc_attr_x( 'Поиск по товарам&hellip;', 'placeholder', 'azera-shop' ); ?>" value="<?php echo get_search_query(); ?>" name="s" title="<?php echo esc_attr_x( 'Search for:', 'label', 'azera-shop' ); ?>" />
+							<input class="search__submit" type="submit" value="<?php echo esc_attr_x( '', 'submit button', 'azera-shop' ); ?>" />
+							<input class="search__product" type="hidden" name="post_type" value="product" />
+						</form>
+					</div>
+		 			<a class="cart" href="<?php echo WC()->cart->get_cart_url() ?>" title="<?php _e( 'Показать вашу корзину','bones' ); ?>"><div class="cart__counter"><?php echo trim( WC()->cart->get_cart_contents_count() ); ?></div></a>
+					<?php } ?>
 				 </div>
 		</div>
 	</div>

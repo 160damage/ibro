@@ -11,7 +11,7 @@
   float:left;
   width: 21px;
   height: 19px;
-  background: url(img/two-quotes.png);
+  background: url(../images/two-quotes.png);
 }
 
 .reviews__quote:after{
@@ -21,7 +21,7 @@
   width: 21px;
   height: 19px;
   float:right;
-  background: url(img/two-quotes.png);
+  background: url(../images/two-quotes.png);
 }
 .reviews__avatar{
   width: 75px;

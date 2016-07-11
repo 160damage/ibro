@@ -30,14 +30,14 @@
   display: block;
 }
 .columns-info__icon-left{
-  background: url(img/smartphone-11.png) no-repeat;
+  background: url(../images/smartphone-11.png) no-repeat;
   width: 159px;
   height: 167px;
   float: left;
   margin-right: 20px;
 }
 .columns-info__icon-right{
-  background: url(img/umbrella.png) no-repeat;
+  background: url(../images/umbrella.png) no-repeat;
   margin-top: 5px;
   width: 135px;
   height: 161px;
