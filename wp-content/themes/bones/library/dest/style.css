@@ -1457,7 +1457,7 @@ option {
   height: 20px;
   width: 20px;
   display: block;*/
-    margin: 30px 10px 0 0;
+    margin: 29px 10px 0 0;
     display: inline-block;
     width: 22px;
     height: 22px;
@@ -1549,7 +1549,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     visibility: visible;
     opacity: 1
 }
-.last-items__image {
+.last-items__image-holder img {
     transition: all .3s ease-in-out;
     object-fit: cover;
     width: 100%;

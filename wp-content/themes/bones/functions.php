@@ -115,14 +115,14 @@ new image size.
 
 /************* THEME CUSTOMIZE *********************/
 
-/* 
+/*
   A good tutorial for creating your own Sections, Controls and Settings:
   http://code.tutsplus.com/series/a-guide-to-the-wordpress-theme-customizer--wp-33722
-  
+
   Good articles on modifying the default options:
   http://natko.com/changing-default-wordpress-theme-customization-api-sections/
   http://code.tutsplus.com/tutorials/digging-into-the-theme-customizer-components--wp-27162
-  
+
   To do:
   - Create a js for the postmessage transport method
   - Create some sanitize functions to sanitize inputs
@@ -132,7 +132,7 @@ new image size.
 function bones_theme_customizer($wp_customize) {
   // $wp_customize calls go here.
   //
-  // Uncomment the below lines to remove the default customize sections 
+  // Uncomment the below lines to remove the default customize sections
 
   // $wp_customize->remove_section('title_tagline');
   // $wp_customize->remove_section('colors');
@@ -142,7 +142,7 @@ function bones_theme_customizer($wp_customize) {
 
   // Uncomment the below lines to remove the default controls
   // $wp_customize->remove_control('blogdescription');
-  
+
   // Uncomment the following to change the default section titles
   // $wp_customize->get_section('colors')->title = __( 'Theme Colors' );
   // $wp_customize->get_section('background_image')->title = __( 'Images' );
@@ -244,4 +244,32 @@ function bones_fonts() {
 
 add_action('wp_enqueue_scripts', 'bones_fonts');
 
+
+remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10);
+remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10);
+
+add_action('woocommerce_before_main_content', 'my_theme_wrapper_start', 10);
+add_action('woocommerce_after_main_content', 'my_theme_wrapper_end', 10);
+
+function my_theme_wrapper_start() {
+  echo '<section id="main">';
+}
+
+function my_theme_wrapper_end() {
+  echo '</section>';
+}
+
+
+add_action( 'after_setup_theme', 'woocommerce_support' );
+function woocommerce_support() {
+    add_theme_support( 'woocommerce' );
+}
+
+add_filter( 'woocommerce_product_tabs', 'sb_woo_remove_reviews_tab', 98);
+function sb_woo_remove_reviews_tab($tabs) {
+
+unset($tabs['reviews']);
+
+return $tabs;
+}
 /* DON'T DELETE THIS CLOSING TAG */ ?>

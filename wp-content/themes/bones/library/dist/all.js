@@ -136,8 +136,24 @@ jQuery(document).ready(function($) {
 }); /* end of as page load scripts */
 
 jQuery(document).ready(function($) {
+
+
+
+
+
 		var container = $(".search__triggered"),
-		trigger = $(".search__trigger");
+		trigger = $(".search__trigger"),
+		toCart = $(".add_to_cart_button"),
+		cartCounter = $(".cart__counter");
+
+		var counter = 0;
+
+		toCart.click(function(){
+			counter = cartCounter.html();
+			counter++;
+			cartCounter.html(counter);
+		})
+
 
 			$(document).click( function(event){
 				if( $(event.target).closest(".search__triggered").length )

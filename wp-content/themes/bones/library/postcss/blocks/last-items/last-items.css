@@ -46,7 +46,7 @@
   visibility: visible;
   opacity: 1;
 }
-.last-items__image{
+.last-items__image-holder img{
   transition: all .3s ease-in-out;
   object-fit:cover;
   width: 100%;
@@ -78,7 +78,7 @@
   visibility: hidden;
   border-radius: 3px;
   opacity: 0;
-  transition: all .5s ease-in-out; 
+  transition: all .5s ease-in-out;
 }
 .last-items__buttons:before{
   content: '';
